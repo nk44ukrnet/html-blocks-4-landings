@@ -353,6 +353,27 @@
     margin-bottom: var(--gap-md);
   }
 
+  &__insertion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xsm);
+    margin-bottom: var(--gap-md);
+
+    iframe {
+      display: block;
+      width: 100%;
+      flex: 0 1 500px;
+    }
+  }
+  &__video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    flex: 0 1 600px;
+    object-fit: cover;
+  }
+
+
   &__icons {
     display: flex;
     flex-wrap: wrap;
