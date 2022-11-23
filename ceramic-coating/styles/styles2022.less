@@ -474,6 +474,28 @@
   small {
 
   }
+  @media (max-width: 1160px) {
+    &__insertion {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap-xsm);
+      margin-bottom: var(--gap-md);
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        flex: 1 1 100%;
+      }
+    }
+    &__video {
+      display: block;
+      width: 100%;
+      max-width: unset;
+      flex: 1 1 100%;
+      object-fit: cover;
+    }
+  }
+  
   @media (max-width: 768px) {
     &__icons {
 

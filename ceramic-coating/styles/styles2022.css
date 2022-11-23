@@ -452,6 +452,26 @@
   line-height: var(--lh);
   font-weight: bold;
 }
+@media (max-width: 1160px) {
+  .html-blocks-ua-car-packages2__insertion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xsm);
+    margin-bottom: var(--gap-md);
+    justify-content: center;
+    align-items: center;
+  }
+  .html-blocks-ua-car-packages2__insertion iframe {
+    flex: 1 1 100%;
+  }
+  .html-blocks-ua-car-packages2__video {
+    display: block;
+    width: 100%;
+    max-width: unset;
+    flex: 1 1 100%;
+    object-fit: cover;
+  }
+}
 @media (max-width: 768px) {
   .html-blocks-ua-car-packages2__icons img {
     max-width: 100px;
