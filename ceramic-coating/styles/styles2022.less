@@ -38,32 +38,16 @@
   }
 }
 
-//styles for blocks
-//*, *:before, *:after {
-//  margin: 0;
-//  padding: 0;
-//  box-sizing: border-box;
-//}
-
 .text-center {
   text-align: center;
 }
-
-//a {
-//  color: var(--blue);
-//}
 
 ._lock {
   overflow: hidden;
 }
 
 //localize styles
-.html-blocks-ua-hero,
-.html-blocks-ua-info,
-.html-blocks-ua-car-packages,
-.html-blocks-ua-car-packages2,
-.html-blocks-ua-tabs,
-.html-blocks-ua-modal {
+.html-blocks-ua-car-packages2 {
 
   font-family: var(--font1);
   font-size: 16px;
@@ -342,95 +326,13 @@
   font-weight: 600;
 }
 
-.html-blocks-hero {
-  background-color: #bdbbbb;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  background-attachment: fixed;
-
-  &::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--blue-light2);
-    pointer-events: none;
-  }
-
-  &.bordered {
-    border-bottom: 10px solid var(--blue);
-  }
-
-  &__container {
-    padding-top: 150px;
-    padding-bottom: 140px;
-    color: #fff;
-    position: relative;
-    z-index: 2;
-  }
-
-  &__text {
-    font-family: var(--font2);
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 2px;
-  }
-
-  &__heading {
-    margin-top: 25px;
-    margin-bottom: 30px;
-    line-height: var(--lh);
-    font-size: 60px;
-  }
-
-  &__btn {
-
-    span {
-    }
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
-  }
-
-  @media (max-width: @mobile) {
-    &__container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: flex-start;
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
-
-    &.bordered {
-      border-bottom: 5px solid var(--blue);
-    }
-
-    &__heading {
-      margin-top: 15px;
-      margin-bottom: 25px;
-      font-size: 40px;
-
-      br {
-        display: none;
-      }
-    }
-  }
-}
 
 //Ultimate armor
 
 .html-blocks-ua-car-packages2 {
   background-color: var(--dark);
-  padding-top: var(--gap-lg);
-  padding-bottom: var(--gap-lg);
+  padding-top: var(--gap-md);
+  padding-bottom: var(--gap-md);
   border-top: 4px solid var(--light);
   color: var(--light);
   background: linear-gradient(90deg, #282826, var(--dark));
@@ -560,7 +462,6 @@
     }
   }
 }
-
 
 
 
