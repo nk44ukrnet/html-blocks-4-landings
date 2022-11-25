@@ -342,6 +342,23 @@
   color: var(--light);
   background: linear-gradient(90deg, #282826, var(--dark));
 }
+.html-blocks-ua-car-packages2__header {
+  padding-top: var(--gap-sm);
+  padding-bottom: var(--gap-sm);
+  text-align: center;
+}
+.html-blocks-ua-car-packages2__header img {
+  display: table;
+  margin-inline: auto;
+  background-color: var(--light);
+  border-radius: var(--gap-xsm);
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages2__header video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .html-blocks-ua-car-packages2__logo {
   display: table;
   margin-inline: auto;
@@ -359,13 +376,14 @@
   gap: var(--gap-xsm);
   margin-bottom: var(--gap-md);
   justify-content: center;
+  align-items: center;
 }
-.html-blocks-ua-car-packages2__insertion iframe {
+.html-blocks-ua-car-packages2__insertion iframe.form {
   display: block;
   width: 100%;
   flex: 0 1 500px;
 }
-.html-blocks-ua-car-packages2__video {
+.html-blocks-ua-car-packages2__insertion iframe.video {
   display: block;
   width: 100%;
   max-width: 600px;
@@ -478,4 +496,4 @@
     max-width: 100px;
   }
 }
-/*# sourceMappingURL=styles2022.css.map */
+/*# sourceMappingURL=styles-cc.css.map */
