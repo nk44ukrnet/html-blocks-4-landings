@@ -1,0 +1,2296 @@
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa09eDukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoaMWQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa0reHukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa0gebukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa05efukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP1d7auh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP2D6quh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP266quh.ttf) format('truetype');
+}
+:root {
+  --light: #fff;
+  --dark: #0a0404;
+  --dark1: hsla(345, 5%, 36%, 0.5);
+  --dark2: rgba(0, 0, 0, 0.7);
+  --blue: hsl(326, 91%, 52%);
+  --blue-alter: hsl(326, 61%, 52%);
+  --blue-light: hsla(326, 61%, 52%, 0.6);
+  --blue-light2: hsla(326, 61%, 52%, 0.2);
+  --lh: 150%;
+  --font1: 'Bai Jamjuree', sans-serif;
+  --font2: 'Jura', sans-serif;
+  --transition: all 0.25s linear;
+  --gap-lg: 100px;
+  --gap-md: 50px;
+  --gap-sm: 20px;
+  --gap-xsm: 10px;
+}
+@media (max-width: 768px) {
+  :root {
+    --gap-lg: 50px;
+    --gap-md: 30px;
+    --gap-sm: 15px;
+  }
+}
+.text-center {
+  text-align: center;
+}
+._lock {
+  overflow: hidden;
+}
+.html-blocks-hero,
+.html-blocks-chessboard,
+.html-blocks-info,
+.html-blocks,
+.html-blocks-pricing,
+.html-blocks-products,
+.html-block-contact-hero,
+.html-block-contact,
+.html-blocks-cars-cards,
+.html-blocks-definition,
+.html-blocks-ua-hero,
+.html-blocks-ua-info,
+.html-blocks-ua-car-packages,
+.html-blocks-ua-car-packages2,
+.html-blocks-ua-tabs,
+.html-blocks-ua-modal,
+.html-blocks-landing-tint {
+  font-family: var(--font1);
+  font-size: 16px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero,
+  .html-blocks-chessboard,
+  .html-blocks-info,
+  .html-blocks,
+  .html-blocks-pricing,
+  .html-blocks-products,
+  .html-block-contact-hero,
+  .html-block-contact,
+  .html-blocks-cars-cards,
+  .html-blocks-definition,
+  .html-blocks-ua-hero,
+  .html-blocks-ua-info,
+  .html-blocks-ua-car-packages,
+  .html-blocks-ua-car-packages2,
+  .html-blocks-ua-tabs,
+  .html-blocks-ua-modal,
+  .html-blocks-landing-tint {
+    font-size: 14px;
+  }
+}
+.html-blocks-hero [class*=__container],
+.html-blocks-chessboard [class*=__container],
+.html-blocks-info [class*=__container],
+.html-blocks [class*=__container],
+.html-blocks-pricing [class*=__container],
+.html-blocks-products [class*=__container],
+.html-block-contact-hero [class*=__container],
+.html-block-contact [class*=__container],
+.html-blocks-cars-cards [class*=__container],
+.html-blocks-definition [class*=__container],
+.html-blocks-ua-hero [class*=__container],
+.html-blocks-ua-info [class*=__container],
+.html-blocks-ua-car-packages [class*=__container],
+.html-blocks-ua-car-packages2 [class*=__container],
+.html-blocks-ua-tabs [class*=__container],
+.html-blocks-ua-modal [class*=__container],
+.html-blocks-landing-tint [class*=__container] {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.html-blocks-hero .heading,
+.html-blocks-chessboard .heading,
+.html-blocks-info .heading,
+.html-blocks .heading,
+.html-blocks-pricing .heading,
+.html-blocks-products .heading,
+.html-block-contact-hero .heading,
+.html-block-contact .heading,
+.html-blocks-cars-cards .heading,
+.html-blocks-definition .heading,
+.html-blocks-ua-hero .heading,
+.html-blocks-ua-info .heading,
+.html-blocks-ua-car-packages .heading,
+.html-blocks-ua-car-packages2 .heading,
+.html-blocks-ua-tabs .heading,
+.html-blocks-ua-modal .heading,
+.html-blocks-landing-tint .heading {
+  font-size: 48px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .heading,
+  .html-blocks-chessboard .heading,
+  .html-blocks-info .heading,
+  .html-blocks .heading,
+  .html-blocks-pricing .heading,
+  .html-blocks-products .heading,
+  .html-block-contact-hero .heading,
+  .html-block-contact .heading,
+  .html-blocks-cars-cards .heading,
+  .html-blocks-definition .heading,
+  .html-blocks-ua-hero .heading,
+  .html-blocks-ua-info .heading,
+  .html-blocks-ua-car-packages .heading,
+  .html-blocks-ua-car-packages2 .heading,
+  .html-blocks-ua-tabs .heading,
+  .html-blocks-ua-modal .heading,
+  .html-blocks-landing-tint .heading {
+    font-size: 35px;
+  }
+}
+.html-blocks-hero .heading-2,
+.html-blocks-chessboard .heading-2,
+.html-blocks-info .heading-2,
+.html-blocks .heading-2,
+.html-blocks-pricing .heading-2,
+.html-blocks-products .heading-2,
+.html-block-contact-hero .heading-2,
+.html-block-contact .heading-2,
+.html-blocks-cars-cards .heading-2,
+.html-blocks-definition .heading-2,
+.html-blocks-ua-hero .heading-2,
+.html-blocks-ua-info .heading-2,
+.html-blocks-ua-car-packages .heading-2,
+.html-blocks-ua-car-packages2 .heading-2,
+.html-blocks-ua-tabs .heading-2,
+.html-blocks-ua-modal .heading-2,
+.html-blocks-landing-tint .heading-2 {
+  font-size: 38px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .heading-2,
+  .html-blocks-chessboard .heading-2,
+  .html-blocks-info .heading-2,
+  .html-blocks .heading-2,
+  .html-blocks-pricing .heading-2,
+  .html-blocks-products .heading-2,
+  .html-block-contact-hero .heading-2,
+  .html-block-contact .heading-2,
+  .html-blocks-cars-cards .heading-2,
+  .html-blocks-definition .heading-2,
+  .html-blocks-ua-hero .heading-2,
+  .html-blocks-ua-info .heading-2,
+  .html-blocks-ua-car-packages .heading-2,
+  .html-blocks-ua-car-packages2 .heading-2,
+  .html-blocks-ua-tabs .heading-2,
+  .html-blocks-ua-modal .heading-2,
+  .html-blocks-landing-tint .heading-2 {
+    font-size: 28px;
+  }
+}
+.html-blocks-hero .colored,
+.html-blocks-chessboard .colored,
+.html-blocks-info .colored,
+.html-blocks .colored,
+.html-blocks-pricing .colored,
+.html-blocks-products .colored,
+.html-block-contact-hero .colored,
+.html-block-contact .colored,
+.html-blocks-cars-cards .colored,
+.html-blocks-definition .colored,
+.html-blocks-ua-hero .colored,
+.html-blocks-ua-info .colored,
+.html-blocks-ua-car-packages .colored,
+.html-blocks-ua-car-packages2 .colored,
+.html-blocks-ua-tabs .colored,
+.html-blocks-ua-modal .colored,
+.html-blocks-landing-tint .colored {
+  color: var(--blue);
+}
+.html-blocks-hero .btn_light,
+.html-blocks-chessboard .btn_light,
+.html-blocks-info .btn_light,
+.html-blocks .btn_light,
+.html-blocks-pricing .btn_light,
+.html-blocks-products .btn_light,
+.html-block-contact-hero .btn_light,
+.html-block-contact .btn_light,
+.html-blocks-cars-cards .btn_light,
+.html-blocks-definition .btn_light,
+.html-blocks-ua-hero .btn_light,
+.html-blocks-ua-info .btn_light,
+.html-blocks-ua-car-packages .btn_light,
+.html-blocks-ua-car-packages2 .btn_light,
+.html-blocks-ua-tabs .btn_light,
+.html-blocks-ua-modal .btn_light,
+.html-blocks-landing-tint .btn_light {
+  display: table;
+  padding: 20px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--light);
+  border: 1px solid var(--light);
+}
+.html-blocks-hero .btn,
+.html-blocks-chessboard .btn,
+.html-blocks-info .btn,
+.html-blocks .btn,
+.html-blocks-pricing .btn,
+.html-blocks-products .btn,
+.html-block-contact-hero .btn,
+.html-block-contact .btn,
+.html-blocks-cars-cards .btn,
+.html-blocks-definition .btn,
+.html-blocks-ua-hero .btn,
+.html-blocks-ua-info .btn,
+.html-blocks-ua-car-packages .btn,
+.html-blocks-ua-car-packages2 .btn,
+.html-blocks-ua-tabs .btn,
+.html-blocks-ua-modal .btn,
+.html-blocks-landing-tint .btn {
+  color: var(--light);
+  text-decoration: none;
+  background: var(--blue-light);
+  padding: 16px 80px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: var(--lh);
+  border: 1px solid var(--light);
+  transition: var(--transition);
+  transform: skew(-21deg);
+}
+.html-blocks-hero .btn:focus,
+.html-blocks-chessboard .btn:focus,
+.html-blocks-info .btn:focus,
+.html-blocks .btn:focus,
+.html-blocks-pricing .btn:focus,
+.html-blocks-products .btn:focus,
+.html-block-contact-hero .btn:focus,
+.html-block-contact .btn:focus,
+.html-blocks-cars-cards .btn:focus,
+.html-blocks-definition .btn:focus,
+.html-blocks-ua-hero .btn:focus,
+.html-blocks-ua-info .btn:focus,
+.html-blocks-ua-car-packages .btn:focus,
+.html-blocks-ua-car-packages2 .btn:focus,
+.html-blocks-ua-tabs .btn:focus,
+.html-blocks-ua-modal .btn:focus,
+.html-blocks-landing-tint .btn:focus,
+.html-blocks-hero .btn:visited,
+.html-blocks-chessboard .btn:visited,
+.html-blocks-info .btn:visited,
+.html-blocks .btn:visited,
+.html-blocks-pricing .btn:visited,
+.html-blocks-products .btn:visited,
+.html-block-contact-hero .btn:visited,
+.html-block-contact .btn:visited,
+.html-blocks-cars-cards .btn:visited,
+.html-blocks-definition .btn:visited,
+.html-blocks-ua-hero .btn:visited,
+.html-blocks-ua-info .btn:visited,
+.html-blocks-ua-car-packages .btn:visited,
+.html-blocks-ua-car-packages2 .btn:visited,
+.html-blocks-ua-tabs .btn:visited,
+.html-blocks-ua-modal .btn:visited,
+.html-blocks-landing-tint .btn:visited {
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-hero .btn:hover,
+.html-blocks-chessboard .btn:hover,
+.html-blocks-info .btn:hover,
+.html-blocks .btn:hover,
+.html-blocks-pricing .btn:hover,
+.html-blocks-products .btn:hover,
+.html-block-contact-hero .btn:hover,
+.html-block-contact .btn:hover,
+.html-blocks-cars-cards .btn:hover,
+.html-blocks-definition .btn:hover,
+.html-blocks-ua-hero .btn:hover,
+.html-blocks-ua-info .btn:hover,
+.html-blocks-ua-car-packages .btn:hover,
+.html-blocks-ua-car-packages2 .btn:hover,
+.html-blocks-ua-tabs .btn:hover,
+.html-blocks-ua-modal .btn:hover,
+.html-blocks-landing-tint .btn:hover {
+  background-color: var(--blue-alter);
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-hero .btn span,
+.html-blocks-chessboard .btn span,
+.html-blocks-info .btn span,
+.html-blocks .btn span,
+.html-blocks-pricing .btn span,
+.html-blocks-products .btn span,
+.html-block-contact-hero .btn span,
+.html-block-contact .btn span,
+.html-blocks-cars-cards .btn span,
+.html-blocks-definition .btn span,
+.html-blocks-ua-hero .btn span,
+.html-blocks-ua-info .btn span,
+.html-blocks-ua-car-packages .btn span,
+.html-blocks-ua-car-packages2 .btn span,
+.html-blocks-ua-tabs .btn span,
+.html-blocks-ua-modal .btn span,
+.html-blocks-landing-tint .btn span {
+  position: relative;
+  display: inline-block;
+  transform: skew(21deg);
+  color: inherit;
+}
+.html-blocks-hero .btn_active,
+.html-blocks-chessboard .btn_active,
+.html-blocks-info .btn_active,
+.html-blocks .btn_active,
+.html-blocks-pricing .btn_active,
+.html-blocks-products .btn_active,
+.html-block-contact-hero .btn_active,
+.html-block-contact .btn_active,
+.html-blocks-cars-cards .btn_active,
+.html-blocks-definition .btn_active,
+.html-blocks-ua-hero .btn_active,
+.html-blocks-ua-info .btn_active,
+.html-blocks-ua-car-packages .btn_active,
+.html-blocks-ua-car-packages2 .btn_active,
+.html-blocks-ua-tabs .btn_active,
+.html-blocks-ua-modal .btn_active,
+.html-blocks-landing-tint .btn_active {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .btn,
+  .html-blocks-chessboard .btn,
+  .html-blocks-info .btn,
+  .html-blocks .btn,
+  .html-blocks-pricing .btn,
+  .html-blocks-products .btn,
+  .html-block-contact-hero .btn,
+  .html-block-contact .btn,
+  .html-blocks-cars-cards .btn,
+  .html-blocks-definition .btn,
+  .html-blocks-ua-hero .btn,
+  .html-blocks-ua-info .btn,
+  .html-blocks-ua-car-packages .btn,
+  .html-blocks-ua-car-packages2 .btn,
+  .html-blocks-ua-tabs .btn,
+  .html-blocks-ua-modal .btn,
+  .html-blocks-landing-tint .btn {
+    padding: 16px 60px;
+  }
+}
+.html-blocks-hero .font2,
+.html-blocks-chessboard .font2,
+.html-blocks-info .font2,
+.html-blocks .font2,
+.html-blocks-pricing .font2,
+.html-blocks-products .font2,
+.html-block-contact-hero .font2,
+.html-block-contact .font2,
+.html-blocks-cars-cards .font2,
+.html-blocks-definition .font2,
+.html-blocks-ua-hero .font2,
+.html-blocks-ua-info .font2,
+.html-blocks-ua-car-packages .font2,
+.html-blocks-ua-car-packages2 .font2,
+.html-blocks-ua-tabs .font2,
+.html-blocks-ua-modal .font2,
+.html-blocks-landing-tint .font2 {
+  font-family: var(--font2);
+}
+.html-blocks-hero .text-highlight,
+.html-blocks-chessboard .text-highlight,
+.html-blocks-info .text-highlight,
+.html-blocks .text-highlight,
+.html-blocks-pricing .text-highlight,
+.html-blocks-products .text-highlight,
+.html-block-contact-hero .text-highlight,
+.html-block-contact .text-highlight,
+.html-blocks-cars-cards .text-highlight,
+.html-blocks-definition .text-highlight,
+.html-blocks-ua-hero .text-highlight,
+.html-blocks-ua-info .text-highlight,
+.html-blocks-ua-car-packages .text-highlight,
+.html-blocks-ua-car-packages2 .text-highlight,
+.html-blocks-ua-tabs .text-highlight,
+.html-blocks-ua-modal .text-highlight,
+.html-blocks-landing-tint .text-highlight {
+  color: var(--blue);
+}
+.html-blocks-hero .mb4,
+.html-blocks-chessboard .mb4,
+.html-blocks-info .mb4,
+.html-blocks .mb4,
+.html-blocks-pricing .mb4,
+.html-blocks-products .mb4,
+.html-block-contact-hero .mb4,
+.html-block-contact .mb4,
+.html-blocks-cars-cards .mb4,
+.html-blocks-definition .mb4,
+.html-blocks-ua-hero .mb4,
+.html-blocks-ua-info .mb4,
+.html-blocks-ua-car-packages .mb4,
+.html-blocks-ua-car-packages2 .mb4,
+.html-blocks-ua-tabs .mb4,
+.html-blocks-ua-modal .mb4,
+.html-blocks-landing-tint .mb4 {
+  margin-bottom: 40px;
+}
+.html-blocks-hero .contact-form,
+.html-blocks-chessboard .contact-form,
+.html-blocks-info .contact-form,
+.html-blocks .contact-form,
+.html-blocks-pricing .contact-form,
+.html-blocks-products .contact-form,
+.html-block-contact-hero .contact-form,
+.html-block-contact .contact-form,
+.html-blocks-cars-cards .contact-form,
+.html-blocks-definition .contact-form,
+.html-blocks-ua-hero .contact-form,
+.html-blocks-ua-info .contact-form,
+.html-blocks-ua-car-packages .contact-form,
+.html-blocks-ua-car-packages2 .contact-form,
+.html-blocks-ua-tabs .contact-form,
+.html-blocks-ua-modal .contact-form,
+.html-blocks-landing-tint .contact-form {
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.html-blocks-hero .contact-form p,
+.html-blocks-chessboard .contact-form p,
+.html-blocks-info .contact-form p,
+.html-blocks .contact-form p,
+.html-blocks-pricing .contact-form p,
+.html-blocks-products .contact-form p,
+.html-block-contact-hero .contact-form p,
+.html-block-contact .contact-form p,
+.html-blocks-cars-cards .contact-form p,
+.html-blocks-definition .contact-form p,
+.html-blocks-ua-hero .contact-form p,
+.html-blocks-ua-info .contact-form p,
+.html-blocks-ua-car-packages .contact-form p,
+.html-blocks-ua-car-packages2 .contact-form p,
+.html-blocks-ua-tabs .contact-form p,
+.html-blocks-ua-modal .contact-form p,
+.html-blocks-landing-tint .contact-form p {
+  margin-bottom: 15px;
+}
+.html-blocks-hero .contact-form input,
+.html-blocks-chessboard .contact-form input,
+.html-blocks-info .contact-form input,
+.html-blocks .contact-form input,
+.html-blocks-pricing .contact-form input,
+.html-blocks-products .contact-form input,
+.html-block-contact-hero .contact-form input,
+.html-block-contact .contact-form input,
+.html-blocks-cars-cards .contact-form input,
+.html-blocks-definition .contact-form input,
+.html-blocks-ua-hero .contact-form input,
+.html-blocks-ua-info .contact-form input,
+.html-blocks-ua-car-packages .contact-form input,
+.html-blocks-ua-car-packages2 .contact-form input,
+.html-blocks-ua-tabs .contact-form input,
+.html-blocks-ua-modal .contact-form input,
+.html-blocks-landing-tint .contact-form input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: var(--dark1);
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .contact-form input[type="submit"],
+.html-blocks-chessboard .contact-form input[type="submit"],
+.html-blocks-info .contact-form input[type="submit"],
+.html-blocks .contact-form input[type="submit"],
+.html-blocks-pricing .contact-form input[type="submit"],
+.html-blocks-products .contact-form input[type="submit"],
+.html-block-contact-hero .contact-form input[type="submit"],
+.html-block-contact .contact-form input[type="submit"],
+.html-blocks-cars-cards .contact-form input[type="submit"],
+.html-blocks-definition .contact-form input[type="submit"],
+.html-blocks-ua-hero .contact-form input[type="submit"],
+.html-blocks-ua-info .contact-form input[type="submit"],
+.html-blocks-ua-car-packages .contact-form input[type="submit"],
+.html-blocks-ua-car-packages2 .contact-form input[type="submit"],
+.html-blocks-ua-tabs .contact-form input[type="submit"],
+.html-blocks-ua-modal .contact-form input[type="submit"],
+.html-blocks-landing-tint .contact-form input[type="submit"] {
+  background-color: var(--dark1);
+  color: var(--light);
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.html-blocks-hero .custom-form,
+.html-blocks-chessboard .custom-form,
+.html-blocks-info .custom-form,
+.html-blocks .custom-form,
+.html-blocks-pricing .custom-form,
+.html-blocks-products .custom-form,
+.html-block-contact-hero .custom-form,
+.html-block-contact .custom-form,
+.html-blocks-cars-cards .custom-form,
+.html-blocks-definition .custom-form,
+.html-blocks-ua-hero .custom-form,
+.html-blocks-ua-info .custom-form,
+.html-blocks-ua-car-packages .custom-form,
+.html-blocks-ua-car-packages2 .custom-form,
+.html-blocks-ua-tabs .custom-form,
+.html-blocks-ua-modal .custom-form,
+.html-blocks-landing-tint .custom-form {
+  padding: 10px 20px;
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form button[type="submit"],
+.html-blocks-chessboard .custom-form button[type="submit"],
+.html-blocks-info .custom-form button[type="submit"],
+.html-blocks .custom-form button[type="submit"],
+.html-blocks-pricing .custom-form button[type="submit"],
+.html-blocks-products .custom-form button[type="submit"],
+.html-block-contact-hero .custom-form button[type="submit"],
+.html-block-contact .custom-form button[type="submit"],
+.html-blocks-cars-cards .custom-form button[type="submit"],
+.html-blocks-definition .custom-form button[type="submit"],
+.html-blocks-ua-hero .custom-form button[type="submit"],
+.html-blocks-ua-info .custom-form button[type="submit"],
+.html-blocks-ua-car-packages .custom-form button[type="submit"],
+.html-blocks-ua-car-packages2 .custom-form button[type="submit"],
+.html-blocks-ua-tabs .custom-form button[type="submit"],
+.html-blocks-ua-modal .custom-form button[type="submit"],
+.html-blocks-landing-tint .custom-form button[type="submit"] {
+  padding: 10px 40px;
+  background-color: var(--dark1);
+  color: var(--light);
+  margin-top: 10px;
+  font-family: var(--font2);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.html-blocks-hero .custom-form button[type="submit"].btn_colored,
+.html-blocks-chessboard .custom-form button[type="submit"].btn_colored,
+.html-blocks-info .custom-form button[type="submit"].btn_colored,
+.html-blocks .custom-form button[type="submit"].btn_colored,
+.html-blocks-pricing .custom-form button[type="submit"].btn_colored,
+.html-blocks-products .custom-form button[type="submit"].btn_colored,
+.html-block-contact-hero .custom-form button[type="submit"].btn_colored,
+.html-block-contact .custom-form button[type="submit"].btn_colored,
+.html-blocks-cars-cards .custom-form button[type="submit"].btn_colored,
+.html-blocks-definition .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-hero .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-info .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-car-packages .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-car-packages2 .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-tabs .custom-form button[type="submit"].btn_colored,
+.html-blocks-ua-modal .custom-form button[type="submit"].btn_colored,
+.html-blocks-landing-tint .custom-form button[type="submit"].btn_colored {
+  background-color: var(--blue);
+}
+.html-blocks-hero .custom-form iframe,
+.html-blocks-chessboard .custom-form iframe,
+.html-blocks-info .custom-form iframe,
+.html-blocks .custom-form iframe,
+.html-blocks-pricing .custom-form iframe,
+.html-blocks-products .custom-form iframe,
+.html-block-contact-hero .custom-form iframe,
+.html-block-contact .custom-form iframe,
+.html-blocks-cars-cards .custom-form iframe,
+.html-blocks-definition .custom-form iframe,
+.html-blocks-ua-hero .custom-form iframe,
+.html-blocks-ua-info .custom-form iframe,
+.html-blocks-ua-car-packages .custom-form iframe,
+.html-blocks-ua-car-packages2 .custom-form iframe,
+.html-blocks-ua-tabs .custom-form iframe,
+.html-blocks-ua-modal .custom-form iframe,
+.html-blocks-landing-tint .custom-form iframe {
+  width: 100%;
+  display: block;
+  min-height: 315px;
+}
+.html-blocks-hero .custom-form ul,
+.html-blocks-chessboard .custom-form ul,
+.html-blocks-info .custom-form ul,
+.html-blocks .custom-form ul,
+.html-blocks-pricing .custom-form ul,
+.html-blocks-products .custom-form ul,
+.html-block-contact-hero .custom-form ul,
+.html-block-contact .custom-form ul,
+.html-blocks-cars-cards .custom-form ul,
+.html-blocks-definition .custom-form ul,
+.html-blocks-ua-hero .custom-form ul,
+.html-blocks-ua-info .custom-form ul,
+.html-blocks-ua-car-packages .custom-form ul,
+.html-blocks-ua-car-packages2 .custom-form ul,
+.html-blocks-ua-tabs .custom-form ul,
+.html-blocks-ua-modal .custom-form ul,
+.html-blocks-landing-tint .custom-form ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.html-blocks-hero .custom-form .infusion-field,
+.html-blocks-chessboard .custom-form .infusion-field,
+.html-blocks-info .custom-form .infusion-field,
+.html-blocks .custom-form .infusion-field,
+.html-blocks-pricing .custom-form .infusion-field,
+.html-blocks-products .custom-form .infusion-field,
+.html-block-contact-hero .custom-form .infusion-field,
+.html-block-contact .custom-form .infusion-field,
+.html-blocks-cars-cards .custom-form .infusion-field,
+.html-blocks-definition .custom-form .infusion-field,
+.html-blocks-ua-hero .custom-form .infusion-field,
+.html-blocks-ua-info .custom-form .infusion-field,
+.html-blocks-ua-car-packages .custom-form .infusion-field,
+.html-blocks-ua-car-packages2 .custom-form .infusion-field,
+.html-blocks-ua-tabs .custom-form .infusion-field,
+.html-blocks-ua-modal .custom-form .infusion-field,
+.html-blocks-landing-tint .custom-form .infusion-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+.html-blocks-hero .custom-form .infusion-field input,
+.html-blocks-chessboard .custom-form .infusion-field input,
+.html-blocks-info .custom-form .infusion-field input,
+.html-blocks .custom-form .infusion-field input,
+.html-blocks-pricing .custom-form .infusion-field input,
+.html-blocks-products .custom-form .infusion-field input,
+.html-block-contact-hero .custom-form .infusion-field input,
+.html-block-contact .custom-form .infusion-field input,
+.html-blocks-cars-cards .custom-form .infusion-field input,
+.html-blocks-definition .custom-form .infusion-field input,
+.html-blocks-ua-hero .custom-form .infusion-field input,
+.html-blocks-ua-info .custom-form .infusion-field input,
+.html-blocks-ua-car-packages .custom-form .infusion-field input,
+.html-blocks-ua-car-packages2 .custom-form .infusion-field input,
+.html-blocks-ua-tabs .custom-form .infusion-field input,
+.html-blocks-ua-modal .custom-form .infusion-field input,
+.html-blocks-landing-tint .custom-form .infusion-field input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form .infusion-field select,
+.html-blocks-chessboard .custom-form .infusion-field select,
+.html-blocks-info .custom-form .infusion-field select,
+.html-blocks .custom-form .infusion-field select,
+.html-blocks-pricing .custom-form .infusion-field select,
+.html-blocks-products .custom-form .infusion-field select,
+.html-block-contact-hero .custom-form .infusion-field select,
+.html-block-contact .custom-form .infusion-field select,
+.html-blocks-cars-cards .custom-form .infusion-field select,
+.html-blocks-definition .custom-form .infusion-field select,
+.html-blocks-ua-hero .custom-form .infusion-field select,
+.html-blocks-ua-info .custom-form .infusion-field select,
+.html-blocks-ua-car-packages .custom-form .infusion-field select,
+.html-blocks-ua-car-packages2 .custom-form .infusion-field select,
+.html-blocks-ua-tabs .custom-form .infusion-field select,
+.html-blocks-ua-modal .custom-form .infusion-field select,
+.html-blocks-landing-tint .custom-form .infusion-field select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--light);
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form .infusion-field input[type="radio"],
+.html-blocks-chessboard .custom-form .infusion-field input[type="radio"],
+.html-blocks-info .custom-form .infusion-field input[type="radio"],
+.html-blocks .custom-form .infusion-field input[type="radio"],
+.html-blocks-pricing .custom-form .infusion-field input[type="radio"],
+.html-blocks-products .custom-form .infusion-field input[type="radio"],
+.html-block-contact-hero .custom-form .infusion-field input[type="radio"],
+.html-block-contact .custom-form .infusion-field input[type="radio"],
+.html-blocks-cars-cards .custom-form .infusion-field input[type="radio"],
+.html-blocks-definition .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-hero .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-info .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-car-packages .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-car-packages2 .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-tabs .custom-form .infusion-field input[type="radio"],
+.html-blocks-ua-modal .custom-form .infusion-field input[type="radio"],
+.html-blocks-landing-tint .custom-form .infusion-field input[type="radio"],
+.html-blocks-hero .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-chessboard .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-info .custom-form .infusion-field input[type="checkbox"],
+.html-blocks .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-pricing .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-products .custom-form .infusion-field input[type="checkbox"],
+.html-block-contact-hero .custom-form .infusion-field input[type="checkbox"],
+.html-block-contact .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-cars-cards .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-definition .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-hero .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-info .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-car-packages .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-car-packages2 .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-tabs .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-ua-modal .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-landing-tint .custom-form .infusion-field input[type="checkbox"] {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+.html-blocks-hero .custom-form .infusion-field .options-container,
+.html-blocks-chessboard .custom-form .infusion-field .options-container,
+.html-blocks-info .custom-form .infusion-field .options-container,
+.html-blocks .custom-form .infusion-field .options-container,
+.html-blocks-pricing .custom-form .infusion-field .options-container,
+.html-blocks-products .custom-form .infusion-field .options-container,
+.html-block-contact-hero .custom-form .infusion-field .options-container,
+.html-block-contact .custom-form .infusion-field .options-container,
+.html-blocks-cars-cards .custom-form .infusion-field .options-container,
+.html-blocks-definition .custom-form .infusion-field .options-container,
+.html-blocks-ua-hero .custom-form .infusion-field .options-container,
+.html-blocks-ua-info .custom-form .infusion-field .options-container,
+.html-blocks-ua-car-packages .custom-form .infusion-field .options-container,
+.html-blocks-ua-car-packages2 .custom-form .infusion-field .options-container,
+.html-blocks-ua-tabs .custom-form .infusion-field .options-container,
+.html-blocks-ua-modal .custom-form .infusion-field .options-container,
+.html-blocks-landing-tint .custom-form .infusion-field .options-container {
+  display: flex;
+  flex-direction: column;
+}
+.html-blocks-hero .group,
+.html-blocks-chessboard .group,
+.html-blocks-info .group,
+.html-blocks .group,
+.html-blocks-pricing .group,
+.html-blocks-products .group,
+.html-block-contact-hero .group,
+.html-block-contact .group,
+.html-blocks-cars-cards .group,
+.html-blocks-definition .group,
+.html-blocks-ua-hero .group,
+.html-blocks-ua-info .group,
+.html-blocks-ua-car-packages .group,
+.html-blocks-ua-car-packages2 .group,
+.html-blocks-ua-tabs .group,
+.html-blocks-ua-modal .group,
+.html-blocks-landing-tint .group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+.html-blocks-hero .modal-backdrop,
+.html-blocks-chessboard .modal-backdrop,
+.html-blocks-info .modal-backdrop,
+.html-blocks .modal-backdrop,
+.html-blocks-pricing .modal-backdrop,
+.html-blocks-products .modal-backdrop,
+.html-block-contact-hero .modal-backdrop,
+.html-block-contact .modal-backdrop,
+.html-blocks-cars-cards .modal-backdrop,
+.html-blocks-definition .modal-backdrop,
+.html-blocks-ua-hero .modal-backdrop,
+.html-blocks-ua-info .modal-backdrop,
+.html-blocks-ua-car-packages .modal-backdrop,
+.html-blocks-ua-car-packages2 .modal-backdrop,
+.html-blocks-ua-tabs .modal-backdrop,
+.html-blocks-ua-modal .modal-backdrop,
+.html-blocks-landing-tint .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark1);
+  z-index: 1050;
+  transition: var(--linear);
+}
+.html-blocks-hero .modal-backdrop:not(.active),
+.html-blocks-chessboard .modal-backdrop:not(.active),
+.html-blocks-info .modal-backdrop:not(.active),
+.html-blocks .modal-backdrop:not(.active),
+.html-blocks-pricing .modal-backdrop:not(.active),
+.html-blocks-products .modal-backdrop:not(.active),
+.html-block-contact-hero .modal-backdrop:not(.active),
+.html-block-contact .modal-backdrop:not(.active),
+.html-blocks-cars-cards .modal-backdrop:not(.active),
+.html-blocks-definition .modal-backdrop:not(.active),
+.html-blocks-ua-hero .modal-backdrop:not(.active),
+.html-blocks-ua-info .modal-backdrop:not(.active),
+.html-blocks-ua-car-packages .modal-backdrop:not(.active),
+.html-blocks-ua-car-packages2 .modal-backdrop:not(.active),
+.html-blocks-ua-tabs .modal-backdrop:not(.active),
+.html-blocks-ua-modal .modal-backdrop:not(.active),
+.html-blocks-landing-tint .modal-backdrop:not(.active) {
+  display: none;
+}
+.html-blocks-hero .modal,
+.html-blocks-chessboard .modal,
+.html-blocks-info .modal,
+.html-blocks .modal,
+.html-blocks-pricing .modal,
+.html-blocks-products .modal,
+.html-block-contact-hero .modal,
+.html-block-contact .modal,
+.html-blocks-cars-cards .modal,
+.html-blocks-definition .modal,
+.html-blocks-ua-hero .modal,
+.html-blocks-ua-info .modal,
+.html-blocks-ua-car-packages .modal,
+.html-blocks-ua-car-packages2 .modal,
+.html-blocks-ua-tabs .modal,
+.html-blocks-ua-modal .modal,
+.html-blocks-landing-tint .modal {
+  padding-right: 17px;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  width: 100vw;
+  height: 100vh;
+}
+.html-blocks-hero .modal-dialog,
+.html-blocks-chessboard .modal-dialog,
+.html-blocks-info .modal-dialog,
+.html-blocks .modal-dialog,
+.html-blocks-pricing .modal-dialog,
+.html-blocks-products .modal-dialog,
+.html-block-contact-hero .modal-dialog,
+.html-block-contact .modal-dialog,
+.html-blocks-cars-cards .modal-dialog,
+.html-blocks-definition .modal-dialog,
+.html-blocks-ua-hero .modal-dialog,
+.html-blocks-ua-info .modal-dialog,
+.html-blocks-ua-car-packages .modal-dialog,
+.html-blocks-ua-car-packages2 .modal-dialog,
+.html-blocks-ua-tabs .modal-dialog,
+.html-blocks-ua-modal .modal-dialog,
+.html-blocks-landing-tint .modal-dialog {
+  width: 100%;
+  max-width: 50rem;
+  min-height: calc(100% - 3.5rem);
+  margin: 1.75rem auto;
+  /* background-color: red; */
+  position: relative;
+  /* left: 50%; */
+  display: flex;
+  align-items: center;
+}
+.html-blocks-hero .modal-content,
+.html-blocks-chessboard .modal-content,
+.html-blocks-info .modal-content,
+.html-blocks .modal-content,
+.html-blocks-pricing .modal-content,
+.html-blocks-products .modal-content,
+.html-block-contact-hero .modal-content,
+.html-block-contact .modal-content,
+.html-blocks-cars-cards .modal-content,
+.html-blocks-definition .modal-content,
+.html-blocks-ua-hero .modal-content,
+.html-blocks-ua-info .modal-content,
+.html-blocks-ua-car-packages .modal-content,
+.html-blocks-ua-car-packages2 .modal-content,
+.html-blocks-ua-tabs .modal-content,
+.html-blocks-ua-modal .modal-content,
+.html-blocks-landing-tint .modal-content {
+  border-radius: 2rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  border-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: none;
+}
+.html-blocks-hero .modal-content .close-modal,
+.html-blocks-chessboard .modal-content .close-modal,
+.html-blocks-info .modal-content .close-modal,
+.html-blocks .modal-content .close-modal,
+.html-blocks-pricing .modal-content .close-modal,
+.html-blocks-products .modal-content .close-modal,
+.html-block-contact-hero .modal-content .close-modal,
+.html-block-contact .modal-content .close-modal,
+.html-blocks-cars-cards .modal-content .close-modal,
+.html-blocks-definition .modal-content .close-modal,
+.html-blocks-ua-hero .modal-content .close-modal,
+.html-blocks-ua-info .modal-content .close-modal,
+.html-blocks-ua-car-packages .modal-content .close-modal,
+.html-blocks-ua-car-packages2 .modal-content .close-modal,
+.html-blocks-ua-tabs .modal-content .close-modal,
+.html-blocks-ua-modal .modal-content .close-modal,
+.html-blocks-landing-tint .modal-content .close-modal {
+  text-decoration: none;
+  font-size: 40px;
+  margin-left: auto;
+  display: table;
+  color: var(--black);
+  margin-bottom: var(--gap-sm);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .modal-content,
+  .html-blocks-chessboard .modal-content,
+  .html-blocks-info .modal-content,
+  .html-blocks .modal-content,
+  .html-blocks-pricing .modal-content,
+  .html-blocks-products .modal-content,
+  .html-block-contact-hero .modal-content,
+  .html-block-contact .modal-content,
+  .html-blocks-cars-cards .modal-content,
+  .html-blocks-definition .modal-content,
+  .html-blocks-ua-hero .modal-content,
+  .html-blocks-ua-info .modal-content,
+  .html-blocks-ua-car-packages .modal-content,
+  .html-blocks-ua-car-packages2 .modal-content,
+  .html-blocks-ua-tabs .modal-content,
+  .html-blocks-ua-modal .modal-content,
+  .html-blocks-landing-tint .modal-content {
+    padding: 20px;
+  }
+}
+.important {
+  color: red;
+  font-weight: 600;
+}
+.html-blocks-hero {
+  background-color: #bdbbbb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+}
+.html-blocks-hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-light2);
+  pointer-events: none;
+}
+.html-blocks-hero.bordered {
+  border-bottom: 10px solid var(--blue);
+}
+.html-blocks-hero__container {
+  padding-top: 150px;
+  padding-bottom: 140px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.html-blocks-hero__text {
+  font-family: var(--font2);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.html-blocks-hero__heading {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  line-height: var(--lh);
+  font-size: 60px;
+}
+.html-blocks-hero__btn:not(:last-child) {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .html-blocks-hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .html-blocks-hero.bordered {
+    border-bottom: 5px solid var(--blue);
+  }
+  .html-blocks-hero__heading {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .html-blocks-hero__heading br {
+    display: none;
+  }
+}
+.html-blocks-chessboard {
+  background-image: linear-gradient(180deg, var(--dark) 0, var(--light) 100%);
+  background-origin: border-box;
+  text-align: center;
+}
+.html-blocks-chessboard__container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.html-blocks-chessboard__heading {
+  color: var(--light);
+  line-height: var(--lh);
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.html-blocks-chessboard__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.html-blocks-chessboard__item {
+  background-color: var(--light);
+  display: flex;
+}
+.html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__img {
+  order: 2;
+}
+.html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__desc {
+  order: 1;
+}
+.html-blocks-chessboard__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.html-blocks-chessboard__img {
+  flex: 1 1 500px;
+  background-color: var(--light);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.html-blocks-chessboard__img_cover {
+  background-size: cover;
+}
+.html-blocks-chessboard__desc {
+  flex: 1 1 500px;
+  padding: 40px;
+}
+.html-blocks-chessboard__icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.html-blocks-chessboard__icon img,
+.html-blocks-chessboard__icon svg,
+.html-blocks-chessboard__icon picture {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center center;
+}
+.html-blocks-chessboard__icon svg {
+  fill: var(--light);
+}
+.html-blocks-chessboard__title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: var(--lh);
+}
+.html-blocks-chessboard__text {
+  font-family: var(--font2);
+}
+.html-blocks-chessboard__btn {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .html-blocks-chessboard__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .html-blocks-chessboard__heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .html-blocks-chessboard__holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .html-blocks-chessboard__item {
+    background-color: var(--light);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__img {
+    order: 1;
+  }
+  .html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__desc {
+    order: 2;
+  }
+  .html-blocks-chessboard__img {
+    min-height: 300px;
+  }
+  .html-blocks-chessboard__desc {
+    padding: 10px 10px 20px;
+  }
+  .html-blocks-chessboard__cell {
+    gap: 15px;
+  }
+}
+.html-blocks-info {
+  background-color: #FDFDFD;
+}
+.html-blocks-info__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.html-blocks-info__logo {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 254px;
+}
+.html-blocks-info__heading {
+  font-size: 48px;
+  line-height: var(--lh);
+  font-weight: 300;
+}
+.html-blocks-info__text {
+  font-family: var(--font2);
+}
+.html-blocks-info__locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 70px;
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.html-blocks-info__location {
+  position: relative;
+}
+.html-blocks-info__location::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  transform: translateX(-130%) translateY(40%);
+  background-image: url(../img/location.webp);
+}
+@media (max-width: 768px) {
+  .html-blocks-info__heading {
+    font-size: 35px;
+  }
+  .html-blocks-info__locations {
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.html-blocks__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.html-blocks__item {
+  flex: 1 1 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.html-blocks__logo img {
+  width: 250px;
+}
+.html-blocks__heading {
+  font-weight: 300;
+}
+.html-blocks__img {
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .html-blocks__img {
+    min-height: 300px;
+    order: -1;
+  }
+}
+.html-blocks-pricing__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.html-blocks-pricing__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.html-blocks-pricing__holder.html-blocks-pricing__holder_tint .html-blocks-pricing__row:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.html-blocks-pricing__row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+.html-blocks-pricing__row:nth-child(even) .html-blocks-pricing__item_img {
+  order: 2;
+}
+.html-blocks-pricing__item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1 1 600px;
+}
+.html-blocks-pricing__item_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  padding: 0;
+}
+.html-blocks-pricing__item_img.img-bg-contain {
+  background-size: contain;
+  background-position: center center;
+}
+.html-blocks-pricing__heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.html-blocks-pricing__prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.html-blocks-pricing__price {
+  color: var(--light);
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+}
+.html-blocks-pricing__price:hover,
+.html-blocks-pricing__price:active,
+.html-blocks-pricing__price:visited {
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-pricing__price_selected {
+  background-color: var(--dark1);
+}
+@media (max-width: 1236px) {
+  .html-blocks-pricing__row:nth-child(1) {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  .html-blocks-pricing__row:nth-child(even) .html-blocks-pricing__item_img,
+  .html-blocks-pricing__row:nth-child(odd) .html-blocks-pricing__item_img {
+    order: 2;
+  }
+}
+.html-blocks-products {
+  background-color: var(--dark1);
+  color: var(--light);
+}
+.html-blocks-products__container {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.html-blocks-products__image img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 25px;
+}
+.html-blocks-products__heading {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.html-blocks-products__text {
+  line-height: var(--lh);
+  margin-bottom: 15px;
+}
+.html-blocks-products__desc {
+  color: var(--dark);
+}
+.html-blocks-products__holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.html-blocks-products__item {
+  background-color: var(--light);
+  flex: 1 1 400px;
+  padding: 40px;
+  color: var(--dark);
+}
+.html-blocks-products__picture {
+  display: block;
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto 30px;
+}
+.html-blocks-products__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.html-block-contact-hero {
+  background-size: cover;
+  background-position: center center;
+}
+.html-block-contact-hero__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.html-block-contact-hero__heading {
+  color: var(--light);
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-block-contact-hero__cotainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .html-block-contact-hero__heading {
+    font-size: 45px;
+  }
+}
+.html-block-contact__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.html-block-contact__holder {
+  display: flex;
+}
+@media (max-width: 948px) {
+  .html-block-contact__holder {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.html-block-contact__item {
+  box-sizing: border-box;
+  flex: 1 1 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.html-block-contact__item:nth-child(2) {
+  background-color: var(--dark1);
+  color: var(--light);
+}
+.html-block-contact__item:nth-child(2) a {
+  color: var(--light);
+}
+.html-block-contact__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.html-block-contact__cell iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.html-block-contact__subheading {
+  font-size: 25px;
+}
+.html-blocks-cars-cards {
+  background-color: #EFEFEF;
+}
+.html-blocks-cars-cards__container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.html-blocks-cars-cards__heading {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.html-blocks-cars-cards__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.html-blocks-cars-cards__item {
+  background-color: var(--light);
+  display: flex;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__img {
+  order: 2;
+  flex: 0 1 571px;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content:before {
+  display: none;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 14px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.html-blocks-cars-cards__img {
+  flex: 1 0 600px;
+  min-height: 300px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.html-blocks-cars-cards__content {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  flex: 1 1 600px;
+}
+.html-blocks-cars-cards__content::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 14px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.html-blocks-cars-cards__title {
+  font-size: 25px;
+}
+.html-blocks-cars-cards__subheading {
+  font-size: 20px;
+}
+.html-blocks-cars-cards__price {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--blue);
+}
+.html-blocks-cars-cards__ul {
+  text-align: left;
+  padding-left: 20px;
+}
+.html-blocks-cars-cards__btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 1150px) {
+  .html-blocks-cars-cards__item {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__img {
+    order: 2;
+    flex: 0 1 300px;
+  }
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content:before,
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content::after {
+    display: none;
+  }
+  .html-blocks-cars-cards__img {
+    flex: 1 1 300px;
+    width: 300px;
+    order: 1;
+  }
+  .html-blocks-cars-cards__content {
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    flex: 1 1 auto;
+  }
+  .html-blocks-cars-cards__content::before,
+  .html-blocks-cars-cards__content::after {
+    display: none;
+  }
+}
+.html-blocks-definition {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.html-blocks-definition__item {
+  flex: 1 1 400px;
+}
+.html-blocks-definition__img {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  text-align: center;
+  display: block;
+}
+.html-blocks-definition__text {
+  margin-top: 20px;
+  display: table;
+  margin-inline: auto;
+}
+.html-blocks-ua-hero {
+  position: relative;
+  background-color: var(--dark);
+}
+.html-blocks-ua-hero .btn_light {
+  display: table;
+  margin: 0 auto;
+}
+.html-blocks-ua-hero__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.html-blocks-ua-hero__video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.html-blocks-ua-hero__video::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+.html-blocks-ua-hero__container {
+  padding-top: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+  color: var(--light);
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.html-blocks-ua-hero__heading {
+  color: inherit;
+  font-size: 80px;
+  line-height: var(--lh);
+}
+.html-blocks-ua-hero__subheading {
+  color: inherit;
+  font-size: 60px;
+  line-height: var(--lh);
+}
+@media (max-width: 1035px) {
+  .html-blocks-ua-hero {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .html-blocks-ua-hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark2);
+  }
+  .html-blocks-ua-hero__video {
+    display: none;
+  }
+  .html-blocks-ua-hero__heading {
+    font-size: 50px;
+  }
+  .html-blocks-ua-hero__subheading {
+    font-size: 35px;
+  }
+}
+.html-blocks-ua-info {
+  margin-top: var(--gap-md);
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-ua-info__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xsm);
+  text-align: center;
+}
+.html-blocks-ua-info__logo {
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+.html-blocks-ua-info__heading {
+  margin: 0;
+}
+.html-blocks-ua-info__description {
+  margin: var(--gap-xsm) 0;
+}
+.html-blocks-ua-car-packages {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.html-blocks-ua-car-packages_landing {
+  padding-top: 0;
+  border: none;
+}
+.html-blocks-ua-car-packages__header video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.html-blocks-ua-car-packages__insertion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages__insertion > * {
+  flex: 1 1 400px;
+}
+.html-blocks-ua-car-packages__container {
+  padding-top: var(--gap-lg);
+  padding-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages__logo {
+  display: table;
+  margin-inline: auto;
+  margin-bottom: var(--gap-md);
+  width: 100%;
+  max-width: 500px;
+}
+.html-blocks-ua-car-packages__holder {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.html-blocks-ua-car-packages__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-sm);
+  padding-top: var(--gap-sm);
+  padding-bottom: var(--gap-sm);
+}
+.html-blocks-ua-car-packages__item:not(:last-child) {
+  border-bottom: 1px solid var(--light);
+}
+.html-blocks-ua-car-packages__img {
+  width: 100%;
+  max-width: 550px;
+  min-height: 300px;
+  flex: 0 1 550px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.html-blocks-ua-car-packages__content {
+  width: 100%;
+  max-width: 500px;
+}
+.html-blocks-ua-car-packages__heading {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: var(--gap-xsm);
+}
+.html-blocks-ua-car-packages__subheading {
+  background-color: var(--light);
+  color: var(--dark);
+  padding: var(--gap-xsm);
+  font-size: 20px;
+}
+.html-blocks-ua-car-packages__sub-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  justify-content: center;
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages__sublogo {
+  width: 100%;
+  max-width: 150px;
+}
+@media (max-width: 768px) {
+  .html-blocks-ua-car-packages__sublogo {
+    max-width: 100px;
+  }
+  .html-blocks-ua-car-packages__img {
+    min-height: 150px;
+  }
+}
+.html-blocks-ua-car-packages2 {
+  background-color: var(--dark);
+  padding-top: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+  border-top: 4px solid var(--light);
+  color: var(--light);
+  background: linear-gradient(90deg, #282826, var(--dark));
+}
+.html-blocks-ua-car-packages2__header {
+  padding-bottom: var(--gap-md);
+  text-align: center;
+}
+.html-blocks-ua-car-packages2__header img {
+  display: table;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: var(--gap-lg);
+}
+.html-blocks-ua-car-packages2__header video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.html-blocks-ua-car-packages2__logo {
+  display: table;
+  margin-inline: auto;
+  margin-bottom: var(--gap-xsm);
+  width: 100%;
+  max-width: 350px;
+}
+.html-blocks-ua-car-packages2__subheading {
+  text-transform: uppercase;
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages2__insertion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-xsm);
+  margin-bottom: var(--gap-md);
+  justify-content: center;
+}
+.html-blocks-ua-car-packages2__insertion_center {
+  align-items: center;
+}
+.html-blocks-ua-car-packages2__insertion iframe.form {
+  display: block;
+  width: 100%;
+  flex: 0 1 500px;
+}
+.html-blocks-ua-car-packages2__insertion iframe.video {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  flex: 0 1 600px;
+  object-fit: cover;
+}
+.html-blocks-ua-car-packages2__video {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  flex: 0 1 600px;
+  object-fit: cover;
+}
+.html-blocks-ua-car-packages2__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  justify-content: center;
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-ua-car-packages2__icons img {
+  width: 100%;
+  max-width: 150px;
+  border: 1px solid var(--light);
+  padding: var(--gap-xsm);
+}
+.html-blocks-ua-car-packages2__holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  justify-content: center;
+}
+.html-blocks-ua-car-packages2__item {
+  width: 100%;
+  max-width: 500px;
+  padding: var(--gap-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xsm);
+  box-shadow: 0px 0px 5px var(--dark1);
+  box-sizing: border-box;
+}
+.html-blocks-ua-car-packages2__heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: var(--lh);
+  margin-bottom: var(--gap-sm);
+}
+.html-blocks-ua-car-packages2__feature {
+  text-align: center;
+  background-color: var(--blue);
+  padding: var(--gap-xsm);
+  border-radius: 5px;
+  margin: 0;
+  margin-bottom: var(--gap-sm);
+}
+.html-blocks-ua-car-packages2__ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.html-blocks-ua-car-packages2__li:not(:last-child) {
+  margin-bottom: var(--gap-xsm);
+}
+.html-blocks-ua-car-packages2__li::before {
+  content: attr(data-count);
+  padding: var(--gap-xsm);
+  margin-right: var(--gap-xsm);
+  width: 15px;
+  height: 15px;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--blue);
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: content-box;
+}
+.html-blocks-ua-car-packages2__desc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  text-align: center;
+}
+.html-blocks-ua-car-packages2__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: var(--lh);
+  font-weight: bold;
+}
+.html-blocks-ua-car-packages2_landing {
+  border: none;
+  padding-top: 0;
+}
+@media (max-width: 1160px) {
+  .html-blocks-ua-car-packages2__insertion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xsm);
+    margin-bottom: var(--gap-md);
+    justify-content: center;
+    align-items: center;
+  }
+  .html-blocks-ua-car-packages2__insertion iframe {
+    flex: 1 1 100%;
+  }
+  .html-blocks-ua-car-packages2__video {
+    display: block;
+    width: 100%;
+    max-width: unset;
+    flex: 1 1 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .html-blocks-ua-car-packages2__icons img {
+    max-width: 100px;
+  }
+}
+.html-blocks-ua-tabs {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.html-blocks-ua-tabs__container {
+  padding-top: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+}
+.html-blocks-ua-tabs__tab-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-sm);
+}
+.html-blocks-ua-tabs__tab,
+.html-blocks-ua-tabs__tab:active,
+.html-blocks-ua-tabs__tab:focus,
+.html-blocks-ua-tabs__tab:visited {
+  color: var(--light);
+  text-decoration: none;
+  padding: var(--gap-xsm);
+  font-weight: bold;
+}
+.html-blocks-ua-tabs__tab.active {
+  color: var(--light);
+  background-color: var(--blue);
+}
+.html-blocks-ua-tabs__tab:hover:not(.active) {
+  text-decoration: underline;
+}
+.html-blocks-ua-tabs__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+.html-blocks-ua-tabs__content:not(.active) {
+  display: none;
+}
+.html-blocks-ua-tabs__img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.html-blocks-ua-tabs__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.html-blocks-ua-tabs__heading {
+  margin: 0;
+}
+.html-blocks-ua-tabs__subheading {
+  margin: 0;
+  font-size: 25px;
+  color: var(--blue);
+}
+.html-blocks-ua-tabs__text {
+  font-size: 18px;
+}
+.html-blocks-ua-tabs .btn_light {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+}
+.html-blocks-landing-tint {
+  background: linear-gradient(90deg, #282826, var(--dark));
+}
+.html-blocks-landing-tint__header {
+  padding-top: var(--gap-md);
+  padding-bottom: var(--gap-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  justify-content: center;
+  align-items: center;
+}
+.html-blocks-landing-tint__header > * {
+  flex: 0 1 45%;
+}
+.html-blocks-landing-tint__logo {
+  padding-top: var(--gap-md);
+  padding-bottom: var(--gap-md);
+  background-color: var(--light);
+  text-align: center;
+}
+.html-blocks-landing-tint__logo img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: var(--gap-md);
+}
+.html-blocks-landing-tint__desc {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .html-blocks-landing-tint__desc::before {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: var(--blue);
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.html-blocks-landing-tint__holder {
+  color: var(--light);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-md);
+  padding-top: var(--gap-lg);
+  padding-bottom: var(--gap-lg);
+}
+.html-blocks-landing-tint__item {
+  flex: 1 1 400px;
+}
+.html-blocks-landing-tint__heading {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .html-blocks-landing-tint__header > * {
+    flex: 1 1 100%;
+  }
+}
+/* CUSTOMIZATIONS - HEADER */
+.header-center #search {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.header-center #search::placeholder {
+  color: #888;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav-grp {
+  display: flex;
+}
+.header-nav .header-callout {
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  background: #000;
+  color: #fff;
+  border-top-left-radius: 5px;
+  transition: var(--transition);
+  transform: skew(-21deg);
+  margin-right: -15px;
+  border-bottom-left-radius: 5px;
+  border: 3px solid var(--blue);
+}
+.book-now-btn {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  transform: skew(-21deg);
+  font-weight: bold;
+  border: 3px solid var(--blue);
+  background: var(--blue);
+  padding: 8px 12px;
+  margin-right: 4px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-now-btn > span {
+  position: relative;
+  display: inline-block;
+  transform: skew(21deg);
+  color: inherit;
+}
+@media (max-width: 1248px) {
+  .header-callout > span {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .page-header.type2 .custom-block {
+    display: block !important;
+  }
+  .header-nav {
+    justify-content: flex-end;
+  }
+  .search-area .block-search {
+    z-index: 200;
+  }
+  .logo {
+    max-width: unset !important;
+    z-index: auto;
+  }
+  .header-main .header-row {
+    flex-wrap: wrap;
+  }
+  .header-main > .header-row > div.header-left {
+    width: 100%;
+  }
+  .header-main > .header-row > div:not(.header-left) {
+    flex: 1;
+  }
+  .header-left {
+    width: 100% !important;
+    justify-content: space-between !important;
+    margin-right: unset !important;
+  }
+  .header-right {
+    justify-content: center !important;
+    margin-left: unset !important;
+  }
+  .page-header.sticky-header .header-row .header-center,
+  .page-header.sticky-header .header-row .header-left,
+  .page-header.sticky-header .header-row .header-right {
+    padding-top: 8px !important;
+    padding-bottom: 7px !important;
+  }
+  .page-header.sticky-header .header-row .header-center {
+    display: none;
+  }
+}
+.search-toggle-icon {
+  display: none !important;
+}
+.search-area .block-search {
+  display: block !important;
+  position: relative !important;
+  top: unset !important;
+  border: initial !important;
+  right: unset !important;
+}
+/* END CUSTOMIZATIONS - HEADER */
+/* START CUSTOMIZATIONS - FOOTER */
+.footer-middle {
+  color: #fff !important;
+}
+.footer-middle .contact-info .contact-details strong {
+  color: #888 !important;
+}
+.footer-middle h3.widget-title {
+  color: #f41593 !important;
+  font-size: 1.2em !important;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.footer-middle .block.newsletter {
+  margin-top: 50px;
+}
+.footer-middle .block.newsletter .block-title {
+  font-size: 1.2rem;
+  transition: var(--transition);
+  transform: skew(-21deg);
+  font-weight: bold;
+  background: #222529;
+  padding: 0.1rem;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+.footer-middle .block.newsletter .block-title strong {
+  font-weight: bold;
+  font-size: 1.05rem;
+  background: var(--blue);
+  padding: 0.5rem;
+  margin-right: 0px;
+  margin-left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.footer-middle .footer-ribbon {
+  font-size: 1.2rem;
+  transition: var(--transition);
+  transform: skew(-21deg);
+  font-weight: bold;
+  border: 3px solid var(--blue);
+  background: var(--blue);
+  padding: 8px 18px;
+  margin-right: 4px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+/* END CUSTOMIZATIONS - FOOTER */
+/* START CUSTOMIZATION - Category Main Pages */
+.category-view > .category-cms > .wrapper,
+.cms-shop .column.main .widget.block-static-block > .wrapper {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.cms-shop #maincontent,
+.cms-shop #maincontent .widget.block-static-block {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+/* END CUSTOMIZATION - Category Main Pages */
+/*# sourceMappingURL=styles2022.css.map */
