@@ -73,7 +73,8 @@
 .html-blocks-ua-car-packages,
 .html-blocks-ua-car-packages2,
 .html-blocks-ua-tabs,
-.html-blocks-ua-modal {
+.html-blocks-ua-modal,
+.html-blocks-landing-tint {
 
   font-family: var(--font1);
   font-size: 16px;
@@ -1562,6 +1563,7 @@
 
   &_landing {
     border: none;
+    padding-top: 0;
   }
 
   @media (max-width: 1160px) {
@@ -1675,6 +1677,98 @@
     padding: 15px 30px;
   }
 }
+
+//landing-tint
+
+.html-blocks-landing-tint {
+  background: linear-gradient(90deg, #282826, var(--dark));
+
+  &__container {
+  }
+
+  &__header {
+    padding-top: var(--gap-md);
+    padding-bottom: var(--gap-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      flex: 0 1 45%;
+    }
+  }
+
+  &__logo {
+    padding-top: var(--gap-md);
+    padding-bottom: var(--gap-md);
+    background-color: var(--light);
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      margin-bottom: var(--gap-md);
+      //display: table;
+      //margin-inline: auto;
+    }
+  }
+
+  &__desc {
+    position: relative;
+
+    @media (min-width: 768px) {
+      &::before {
+        content: '';
+        width: 50%;
+        height: 1px;
+        background-color: var(--blue);
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__holder {
+    color: var(--light);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-md);
+
+    padding-top: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
+  }
+
+  &__item {
+    flex: 1 1 400px;
+
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__text {
+  }
+
+  @media (max-width: 768px) {
+    &__header {
+      & > * {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
+
+
+//end of landing tint
 
 //justin's custom code
 /* CUSTOMIZATIONS - HEADER */
