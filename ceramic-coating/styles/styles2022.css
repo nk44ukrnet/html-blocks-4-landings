@@ -1893,6 +1893,9 @@
   line-height: var(--lh);
   font-weight: bold;
 }
+.html-blocks-ua-car-packages2_landing {
+  border: none;
+}
 @media (max-width: 1160px) {
   .html-blocks-ua-car-packages2__insertion {
     display: flex;
